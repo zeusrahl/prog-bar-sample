@@ -1,0 +1,28 @@
+<body class="home">
+  <h2 id="progress-h2">Progress Bar Sample!</h2>
+  <section class="button-wrapper">
+    <button class="btn btn-success" (click)="onLoading()">Loading</button>
+    <button class="btn btn-warning" (click)="onWarning()">Warning</button>
+    <button class="btn btn-danger" (click)="onError()">Error</button>
+  </section>
+  <mat-progress-bar 
+    class="progress-margin"
+    [color]="color"
+    [mode]="mode"
+    [value]="value"></mat-progress-bar>
+</body>
+
+<!-- <mat-card>
+  <mat-card-content>
+    <h2 class="example-h2">Result</h2>
+    <section class="example-section">
+      <mat-progress-bar
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
+        [bufferValue]="bufferValue">
+      </mat-progress-bar>
+    </section>
+  </mat-card-content>
+</mat-card> -->
